@@ -213,7 +213,7 @@ public class Constants {
   }
 
   public static class VisionConstants {
-    public static final int ACTIVE_CAMERAS = 3;
+    public static final int ACTIVE_CAMERAS = 2;
 
     public static final Pose2d[] CAMERA_POSITIONS = {
       new Pose2d(
@@ -221,11 +221,11 @@ public class Constants {
               + edu.wpi.first.math.util.Units.inchesToMeters(1.5),
           edu.wpi.first.math.util.Units.inchesToMeters(5),
           Rotation2d.fromDegrees(180)),
-      new Pose2d(
-          -edu.wpi.first.math.util.Units.inchesToMeters(13.5)
-              + edu.wpi.first.math.util.Units.inchesToMeters(1.5),
-          -edu.wpi.first.math.util.Units.inchesToMeters(5.5),
-          Rotation2d.fromDegrees(180)),
+      // new Pose2d(
+      //     -edu.wpi.first.math.util.Units.inchesToMeters(13.5)
+      //         + edu.wpi.first.math.util.Units.inchesToMeters(1.5),
+      //     -edu.wpi.first.math.util.Units.inchesToMeters(5.5),
+      //     Rotation2d.fromDegrees(180)),
       new Pose2d(
           -edu.wpi.first.math.util.Units.inchesToMeters(13.5)
               + edu.wpi.first.math.util.Units.inchesToMeters(0.875),
@@ -235,8 +235,8 @@ public class Constants {
 
     public static final String[][] TOPIC_NAMES = {
       {"Cam1Tvec", "Cam1Rmat", "Cam1Ids"},
-      {"Cam2Tvec", "Cam2Rmat", "Cam2Ids"},
-      {"Cam3Tvec", "Cam3Rmat", "Cam3Ids"}
+      {"Cam2Tvec", "Cam2Rmat", "Cam2Ids"}
+      // {"Cam3Tvec", "Cam3Rmat", "Cam3Ids"}
       // {"Cam4Tvec", "Cam4Rvec", "Cam4Ids"}
     };
 
